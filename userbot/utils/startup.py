@@ -1,13 +1,12 @@
 import glob
 import os
 import sys
-from asyncio.exceptions import CancelledError
 from datetime import timedelta
 from pathlib import Path
 
-from telethon.types._custom import Button
 from telethon import _tl
 from telethon._misc import utils
+from telethon.types._custom import Button
 
 from userbot import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
@@ -95,7 +94,7 @@ async def startupmessage():
     except Exception as e:
         LOGS.error(e)
         return None
-        
+
 
 async def add_bot_to_logger_group(chat_id):
     """

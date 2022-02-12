@@ -12,11 +12,11 @@ from pathlib import Path
 from time import time
 
 import ujson
-from telethon.types._custom import Button
 from telethon import _tl
+from telethon._misc.utils import get_attributes
 from telethon.errors import BotResponseTimeoutError
 from telethon.events import CallbackQuery
-from telethon._misc.utils import get_attributes
+from telethon.types._custom import Button
 from wget import download
 
 from userbot import catub
