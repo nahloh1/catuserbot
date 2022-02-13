@@ -1,6 +1,6 @@
 import os
 
-from telethon.errors.rpcerrorlist import UsernameOccupiedError
+from telethon.errors import UsernameOccupiedError
 from telethon.tl import functions
 from telethon.tl.functions.account import UpdateUsernameRequest
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest

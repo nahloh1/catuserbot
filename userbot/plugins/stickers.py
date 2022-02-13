@@ -13,7 +13,7 @@ import emoji as catemoji
 from bs4 import BeautifulSoup as bs
 from PIL import Image
 from telethon import events
-from telethon.errors.rpcerrorlist import YouBlockedUserError
+from telethon.errors import YouBlockedUserError
 from telethon.tl import functions, types
 from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get

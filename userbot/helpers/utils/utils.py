@@ -3,7 +3,7 @@ import functools
 import shlex
 from typing import Tuple
 
-from telethon import functions, types
+from telethon import _tl
 
 from ...core.logger import logging
 
@@ -33,7 +33,6 @@ def run_sync(func, *args, **kwargs):
 def run_async(loop, coro):
     return asyncio.run_coroutine_threadsafe(coro, loop).result()
 
-
 def runasync(func: callable):
     """Run async functions with the right event loop."""
     asyncio.get_event_loop()
@@ -43,8 +42,8 @@ def runasync(func: callable):
 async def unsavegif(event, sandy):
     try:
         await event.client(
-            functions.messages.SaveGifRequest(
-                id=types.InputDocument(
+            _tl.fn.messages.SaveGifRequest(
+                id=_tl.InputDocument(
                     id=sandy.media.document.id,
                     access_hash=sandy.media.document.access_hash,
                     file_reference=sandy.media.document.file_reference,

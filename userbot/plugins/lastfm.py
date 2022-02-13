@@ -10,7 +10,7 @@ from urllib import parse
 
 from pylast import LastFMNetwork, MalformedResponseError, User, WSError, md5
 from telethon.errors import AboutTooLongError
-from telethon.errors.rpcerrorlist import FloodWaitError
+from telethon.errors import FloodWaitError
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.users import GetFullUserRequest
 
