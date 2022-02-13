@@ -9,8 +9,8 @@ import jikanpy
 import requests
 from aiohttp import ClientSession
 from jikanpy import Jikan
-from telethon._tl import DocumentAttributeAnimated
 from telethon._misc.utils import is_video
+from telethon._tl import DocumentAttributeAnimated
 
 from ..progress import readable_time
 from ..tools import post_to_telegraph

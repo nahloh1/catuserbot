@@ -2,8 +2,7 @@
 idea from lynda and rose bot
 made by @mrconfused
 """
-from telethon.errors import BadRequestError
-from telethon.errors import UserAdminInvalidError, UserIdInvalidError
+from telethon.errors import BadRequestError, UserAdminInvalidError, UserIdInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 from telethon.utils import get_display_name

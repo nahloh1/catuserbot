@@ -4,8 +4,9 @@ from telethon.errors import (
     BadRequestError,
     ImageProcessFailedError,
     PhotoCropSizeSmallError,
+    UserAdminInvalidError,
+    UserIdInvalidError,
 )
-from telethon.errors import UserAdminInvalidError, UserIdInvalidError
 from telethon.tl.functions.channels import (
     EditAdminRequest,
     EditBannedRequest,
